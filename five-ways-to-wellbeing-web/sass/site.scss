@@ -1,0 +1,45 @@
+﻿@import "materialize";
+
+.theme-light {
+  .color-primary {
+    @extend .cyan;
+  }
+}
+
+.theme-dark {
+
+  @extend .black;
+
+  .color-primary {
+    @extend .black;
+  }
+
+  .color-surface {
+    @extend .grey, .darken-4;
+    .text-color-primary {
+      @extend .white-text;
+    }
+    .text-color-secondary {
+      @extend .grey-text, .lighten-5;
+    }
+  }
+
+  .card {
+    .card-action {
+      a {
+        @extend .cyan-text;
+
+        >.lower-case {
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  &.rounded {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}

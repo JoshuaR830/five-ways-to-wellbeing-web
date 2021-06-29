@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - IntroWebsite</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="~/css/materialize.css" media="screen,projection"/>
+    <link rel="stylesheet" href="~/css/site.css" media="screen,projection"/>
+</head>
+<body class="theme-dark">
+    <nav class="color-primary" role="navigation">
+        <div class="nav-wrapper container color-primary">
+            <a href="#!" class="brand-logo">Five ways to wellbeing</a>
+            <a href="#" data-target="mobile-sidenav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<ul class="sidenav" id="mobile-sidenav">
+    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+    <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+</ul>
+@* <header> *@
+@*     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> *@
+@*         <div class="container"> *@
+@*             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">IntroWebsite</a> *@
+@*             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" *@
+@*                     aria-expanded="false" aria-label="Toggle navigation"> *@
+@*                 <span class="navbar-toggler-icon"></span> *@
+@*             </button> *@
+@*             <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"> *@
+@*                 <ul class="navbar-nav flex-grow-1"> *@
+@*                     <li class="nav-item"> *@
+@*                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> *@
+@*                     </li> *@
+@*                     <li class="nav-item"> *@
+@*                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+@*                     </li> *@
+@*                 </ul> *@
+@*             </div> *@
+@*         </div> *@
+@*     </nav> *@
+@* </header> *@
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2021 - IntroWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+<script src="~/js/bin/materialize.js" asp-append-version="true"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    })
+</script>
+@RenderSection("Scripts", required: false)
+</body>
+</html>
