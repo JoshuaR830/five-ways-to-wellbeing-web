@@ -3,4 +3,9 @@ body {
   color: #333;
 }
 
+.page-width {
+  max-width: 200px;
+  background-color: #00acc1;
+}
+
 /*# sourceMappingURL=card.css.map */

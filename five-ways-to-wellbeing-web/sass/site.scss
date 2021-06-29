@@ -24,7 +24,18 @@
     }
   }
 
+  .page-width {
+    display: flex;
+    justify-content: center;
+  }
+
   .card {
+    .card-content {
+      &.with-graph {
+        justify-content: center;
+        text-align: center;
+      }
+    }
     .card-action {
       a {
         @extend .cyan-text;
@@ -34,6 +45,11 @@
         }
       }
     }
+  }
+  
+  .graph-canvas {
+    justify-content: center;
+    text-align: center;
   }
 }
 

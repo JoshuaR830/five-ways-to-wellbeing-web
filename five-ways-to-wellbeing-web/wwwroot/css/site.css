@@ -8091,8 +8091,20 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+.theme-dark .page-width {
+  display: flex;
+  justify-content: center;
+}
+.theme-dark .card .card-content.with-graph {
+  justify-content: center;
+  text-align: center;
+}
 .theme-dark .card .card-action a > .lower-case {
   text-transform: none;
+}
+.theme-dark .graph-canvas {
+  justify-content: center;
+  text-align: center;
 }
 
 .card.rounded {
