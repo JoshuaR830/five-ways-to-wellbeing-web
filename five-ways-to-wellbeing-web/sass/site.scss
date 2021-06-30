@@ -1,5 +1,12 @@
 ﻿@import "materialize";
 
+$translucent-way-to-wellbeing-be-active: transparentize(#f693a7, 0.85);
+$translucent-way-to-wellbeing-connect: transparentize(#ffd176, .85);
+$translucent-way-to-wellbeing-give: transparentize(#79dc9d, .85);
+$translucent-way-to-wellbeing-keep-learning: transparentize(#6ac8df, .85);
+$translucent-way-to-wellbeing-take-notice: transparentize(#c994e9, .85);
+$translucent-way-to-wellbeing-none: transparentize(#cccccc, .85);
+
 .theme-light {
   .color-primary {
     @extend .cyan;
@@ -9,9 +16,28 @@
 .theme-dark {
 
   @extend .black;
-
-  .color-primary {
+  
+  
+  nav {
     @extend .black;
+
+    &.color-primary {
+      @extend .black;
+    }
+
+    .color-primary {
+      @extend .black;
+    }
+  }
+  
+  .color-primary-icon {
+    @extend .cyan-text;
+    @extend .right;
+    margin: 8px;
+  }
+  
+  .color-primary {
+    @extend .cyan;
   }
 
   .color-surface {
@@ -21,6 +47,55 @@
     }
     .text-color-secondary {
       @extend .grey-text, .lighten-5;
+    }
+    
+    &.none {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-none, transparent);
+
+      .card-action {
+        background-color: transparent;
+      }
+    }
+    
+    &.connect {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-connect, transparent);
+      
+      .card-action {
+        background-color: transparent;
+      }
+    }
+    
+    &.be-active {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-be-active, transparent);
+      
+      .card-action {
+        background-color: transparent;
+      }
+    }
+    
+    &.keep-learning {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-keep-learning, transparent);
+      
+      .card-action {
+        background-color: transparent;
+      }
+    }
+    
+    &.take-notice {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-take-notice, transparent);
+      
+      .card-action {
+        background-color: transparent;
+      }
+    }
+    
+    &.give {
+      background-image: linear-gradient(to bottom right, $translucent-way-to-wellbeing-give, transparent);
+      background-size: 100%;
+      
+      .card-action {
+        background-color: transparent;
+      }
     }
   }
 

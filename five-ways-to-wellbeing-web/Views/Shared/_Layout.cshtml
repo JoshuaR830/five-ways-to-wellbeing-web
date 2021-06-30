@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="~/css/site.css" media="screen,projection"/>
 </head>
 <body class="theme-dark">
-    <nav class="color-primary" role="navigation">
-        <div class="nav-wrapper container color-primary">
-            <a href="#!" class="brand-logo">Five ways to wellbeing</a>
-            <a href="#" data-target="mobile-sidenav" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-            </ul>
-        </div>
-    </nav>
+@* Nav not needed yet - too simple*@
+<nav class="color-primary" role="navigation">
+    <div class="nav-wrapper container color-primary">
+        <a href="#!" class="brand-logo">Five ways to wellbeing</a>
+        @*         <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"> *@
+        @*             <i class="material-icons">menu</i> *@
+        @*         </a> *@
+        @*         <ul id="nav-mobile" class="right hide-on-med-and-down"> *@
+        @*             <li><a asp-controller="Home" asp-action="Index">Home</a></li> *@
+        @*             <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li> *@
+        @*         </ul> *@
+    </div>
+</nav>
 
-<ul class="sidenav" id="mobile-sidenav">
-    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-    <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-</ul>
+@* *@
+@* <ul class="sidenav" id="mobile-sidenav"> *@
+@*     <li><a asp-controller="Home" asp-action="Index">Home</a></li> *@
+@*     <li><a asp-controller="Home" asp-action="Privacy">Privacy</a></li> *@
+@* </ul> *@
+
+
 @* <header> *@
 @*     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"> *@
 @*         <div class="container"> *@
@@ -58,6 +62,8 @@
 @*         &copy; 2021 - IntroWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
 @*     </div> *@
 @* </footer> *@
+
+
 <script src="~/js/colors.js" asp-append-version="true"></script>
 <script src="~/js/materialize/bin/materialize.js" asp-append-version="true"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>

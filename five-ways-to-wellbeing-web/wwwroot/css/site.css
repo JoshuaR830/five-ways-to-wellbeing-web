@@ -863,115 +863,115 @@
   color: #0091ea !important;
 }
 
-.cyan, .theme-light .color-primary {
+.cyan, .theme-dark .color-primary, .theme-light .color-primary {
   background-color: #00bcd4 !important;
 }
 
-.cyan-text, .theme-dark .card .card-action a {
+.cyan-text, .theme-dark .card .card-action a, .theme-dark .color-primary-icon {
   color: #00bcd4 !important;
 }
 
-.cyan.lighten-5, .theme-dark .color-surface .cyan.text-color-secondary, .theme-light .lighten-5.color-primary, .theme-light .theme-dark .color-surface .color-primary.text-color-secondary, .theme-dark .color-surface .theme-light .color-primary.text-color-secondary {
+.cyan.lighten-5, .theme-dark .color-surface .cyan.text-color-secondary, .theme-dark .lighten-5.color-primary, .theme-dark .color-surface .color-primary.text-color-secondary, .theme-light .lighten-5.color-primary {
   background-color: #e0f7fa !important;
 }
 
-.cyan-text.text-lighten-5, .theme-dark .card .card-action a.text-lighten-5 {
+.cyan-text.text-lighten-5, .theme-dark .card .card-action a.text-lighten-5, .theme-dark .text-lighten-5.color-primary-icon {
   color: #e0f7fa !important;
 }
 
-.cyan.lighten-4, .theme-light .lighten-4.color-primary {
+.cyan.lighten-4, .theme-dark .lighten-4.color-primary, .theme-light .lighten-4.color-primary {
   background-color: #b2ebf2 !important;
 }
 
-.cyan-text.text-lighten-4, .theme-dark .card .card-action a.text-lighten-4 {
+.cyan-text.text-lighten-4, .theme-dark .card .card-action a.text-lighten-4, .theme-dark .text-lighten-4.color-primary-icon {
   color: #b2ebf2 !important;
 }
 
-.cyan.lighten-3, .theme-light .lighten-3.color-primary {
+.cyan.lighten-3, .theme-dark .lighten-3.color-primary, .theme-light .lighten-3.color-primary {
   background-color: #80deea !important;
 }
 
-.cyan-text.text-lighten-3, .theme-dark .card .card-action a.text-lighten-3 {
+.cyan-text.text-lighten-3, .theme-dark .card .card-action a.text-lighten-3, .theme-dark .text-lighten-3.color-primary-icon {
   color: #80deea !important;
 }
 
-.cyan.lighten-2, .theme-light .lighten-2.color-primary {
+.cyan.lighten-2, .theme-dark .lighten-2.color-primary, .theme-light .lighten-2.color-primary {
   background-color: #4dd0e1 !important;
 }
 
-.cyan-text.text-lighten-2, .theme-dark .card .card-action a.text-lighten-2 {
+.cyan-text.text-lighten-2, .theme-dark .card .card-action a.text-lighten-2, .theme-dark .text-lighten-2.color-primary-icon {
   color: #4dd0e1 !important;
 }
 
-.cyan.lighten-1, .theme-light .lighten-1.color-primary {
+.cyan.lighten-1, .theme-dark .lighten-1.color-primary, .theme-light .lighten-1.color-primary {
   background-color: #26c6da !important;
 }
 
-.cyan-text.text-lighten-1, .theme-dark .card .card-action a.text-lighten-1 {
+.cyan-text.text-lighten-1, .theme-dark .card .card-action a.text-lighten-1, .theme-dark .text-lighten-1.color-primary-icon {
   color: #26c6da !important;
 }
 
-.cyan.darken-1, .theme-light .darken-1.color-primary {
+.cyan.darken-1, .theme-dark .darken-1.color-primary, .theme-light .darken-1.color-primary {
   background-color: #00acc1 !important;
 }
 
-.cyan-text.text-darken-1, .theme-dark .card .card-action a.text-darken-1 {
+.cyan-text.text-darken-1, .theme-dark .card .card-action a.text-darken-1, .theme-dark .text-darken-1.color-primary-icon {
   color: #00acc1 !important;
 }
 
-.cyan.darken-2, .theme-light .darken-2.color-primary {
+.cyan.darken-2, .theme-dark .darken-2.color-primary, .theme-light .darken-2.color-primary {
   background-color: #0097a7 !important;
 }
 
-.cyan-text.text-darken-2, .theme-dark .card .card-action a.text-darken-2 {
+.cyan-text.text-darken-2, .theme-dark .card .card-action a.text-darken-2, .theme-dark .text-darken-2.color-primary-icon {
   color: #0097a7 !important;
 }
 
-.cyan.darken-3, .theme-light .darken-3.color-primary {
+.cyan.darken-3, .theme-dark .darken-3.color-primary, .theme-light .darken-3.color-primary {
   background-color: #00838f !important;
 }
 
-.cyan-text.text-darken-3, .theme-dark .card .card-action a.text-darken-3 {
+.cyan-text.text-darken-3, .theme-dark .card .card-action a.text-darken-3, .theme-dark .text-darken-3.color-primary-icon {
   color: #00838f !important;
 }
 
-.cyan.darken-4, .theme-dark .cyan.color-surface, .theme-light .darken-4.color-primary, .theme-light .theme-dark .color-primary.color-surface, .theme-dark .theme-light .color-primary.color-surface {
+.cyan.darken-4, .theme-dark .cyan.color-surface, .theme-dark .darken-4.color-primary, .theme-dark .color-primary.color-surface, .theme-light .darken-4.color-primary {
   background-color: #006064 !important;
 }
 
-.cyan-text.text-darken-4, .theme-dark .card .card-action a.text-darken-4 {
+.cyan-text.text-darken-4, .theme-dark .card .card-action a.text-darken-4, .theme-dark .text-darken-4.color-primary-icon {
   color: #006064 !important;
 }
 
-.cyan.accent-1, .theme-light .accent-1.color-primary {
+.cyan.accent-1, .theme-dark .accent-1.color-primary, .theme-light .accent-1.color-primary {
   background-color: #84ffff !important;
 }
 
-.cyan-text.text-accent-1, .theme-dark .card .card-action a.text-accent-1 {
+.cyan-text.text-accent-1, .theme-dark .card .card-action a.text-accent-1, .theme-dark .text-accent-1.color-primary-icon {
   color: #84ffff !important;
 }
 
-.cyan.accent-2, .theme-light .accent-2.color-primary {
+.cyan.accent-2, .theme-dark .accent-2.color-primary, .theme-light .accent-2.color-primary {
   background-color: #18ffff !important;
 }
 
-.cyan-text.text-accent-2, .theme-dark .card .card-action a.text-accent-2 {
+.cyan-text.text-accent-2, .theme-dark .card .card-action a.text-accent-2, .theme-dark .text-accent-2.color-primary-icon {
   color: #18ffff !important;
 }
 
-.cyan.accent-3, .theme-light .accent-3.color-primary {
+.cyan.accent-3, .theme-dark .accent-3.color-primary, .theme-light .accent-3.color-primary {
   background-color: #00e5ff !important;
 }
 
-.cyan-text.text-accent-3, .theme-dark .card .card-action a.text-accent-3 {
+.cyan-text.text-accent-3, .theme-dark .card .card-action a.text-accent-3, .theme-dark .text-accent-3.color-primary-icon {
   color: #00e5ff !important;
 }
 
-.cyan.accent-4, .theme-light .accent-4.color-primary {
+.cyan.accent-4, .theme-dark .accent-4.color-primary, .theme-light .accent-4.color-primary {
   background-color: #00b8d4 !important;
 }
 
-.cyan-text.text-accent-4, .theme-dark .card .card-action a.text-accent-4 {
+.cyan-text.text-accent-4, .theme-dark .card .card-action a.text-accent-4, .theme-dark .text-accent-4.color-primary-icon {
   color: #00b8d4 !important;
 }
 
@@ -2111,7 +2111,7 @@
   color: #212121 !important;
 }
 
-.black, .theme-dark .color-primary, .theme-dark {
+.black, .theme-dark nav .color-primary, .theme-dark nav.color-primary, .theme-dark nav, .theme-dark {
   background-color: #000000 !important;
 }
 
@@ -2667,7 +2667,7 @@ i.left {
   float: left;
   margin-right: 15px;
 }
-i.right {
+i.right, .theme-dark i.color-primary-icon {
   float: right;
   margin-left: 15px;
 }
@@ -3203,7 +3203,7 @@ table.responsive-table td {
   float: left !important;
 }
 
-.right {
+.right, .theme-dark .color-primary-icon {
   float: right !important;
 }
 
@@ -4138,19 +4138,19 @@ nav .brand-logo.center {
     left: 50%;
     transform: translateX(-50%);
   }
-  nav .brand-logo.left, nav .brand-logo.right {
+  nav .brand-logo.left, nav .brand-logo.right, nav .theme-dark .brand-logo.color-primary-icon, .theme-dark nav .brand-logo.color-primary-icon {
     padding: 0;
     transform: none;
   }
   nav .brand-logo.left {
     left: 0.5rem;
   }
-  nav .brand-logo.right {
+  nav .brand-logo.right, nav .theme-dark .brand-logo.color-primary-icon, .theme-dark nav .brand-logo.color-primary-icon {
     right: 0.5rem;
     left: auto;
   }
 }
-nav .brand-logo.right {
+nav .brand-logo.right, nav .theme-dark .brand-logo.color-primary-icon, .theme-dark nav .brand-logo.color-primary-icon {
   right: 0.5rem;
   padding: 0;
 }
@@ -7379,7 +7379,7 @@ input[type=range]::-ms-thumb {
   -webkit-transform: rotate(129deg);
   transform: rotate(129deg);
 }
-.circle-clipper.right .circle {
+.circle-clipper.right .circle, .theme-dark .circle-clipper.color-primary-icon .circle {
   left: -100%;
   border-left-color: transparent !important;
   -webkit-transform: rotate(-129deg);
@@ -7392,7 +7392,7 @@ input[type=range]::-ms-thumb {
   animation: left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 
-.active .circle-clipper.right .circle {
+.active .circle-clipper.right .circle, .active .theme-dark .circle-clipper.color-primary-icon .circle, .theme-dark .active .circle-clipper.color-primary-icon .circle {
   /* duration: ARCTIME */
   -webkit-animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
   animation: right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
@@ -8090,6 +8090,46 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem;
   }
+}
+.theme-dark .color-primary-icon {
+  margin: 8px;
+}
+.theme-dark .color-surface.none {
+  background-image: linear-gradient(to bottom right, rgba(204, 204, 204, 0.15), transparent);
+}
+.theme-dark .color-surface.none .card-action {
+  background-color: transparent;
+}
+.theme-dark .color-surface.connect {
+  background-image: linear-gradient(to bottom right, rgba(255, 209, 118, 0.15), transparent);
+}
+.theme-dark .color-surface.connect .card-action {
+  background-color: transparent;
+}
+.theme-dark .color-surface.be-active {
+  background-image: linear-gradient(to bottom right, rgba(246, 147, 167, 0.15), transparent);
+}
+.theme-dark .color-surface.be-active .card-action {
+  background-color: transparent;
+}
+.theme-dark .color-surface.keep-learning {
+  background-image: linear-gradient(to bottom right, rgba(106, 200, 223, 0.15), transparent);
+}
+.theme-dark .color-surface.keep-learning .card-action {
+  background-color: transparent;
+}
+.theme-dark .color-surface.take-notice {
+  background-image: linear-gradient(to bottom right, rgba(201, 148, 233, 0.15), transparent);
+}
+.theme-dark .color-surface.take-notice .card-action {
+  background-color: transparent;
+}
+.theme-dark .color-surface.give {
+  background-image: linear-gradient(to bottom right, rgba(121, 220, 157, 0.15), transparent);
+  background-size: 100%;
+}
+.theme-dark .color-surface.give .card-action {
+  background-color: transparent;
 }
 .theme-dark .page-width {
   display: flex;

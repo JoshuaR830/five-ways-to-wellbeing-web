@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <data name="connect">
+        <value>Connect</value>
+    </data>
+
+    <data name="wellbeing_connect">
+        <value>Connect</value>
+    </data>
+    
+    <data name="wellbeing_be_active">
+        <value>Be active</value>
+    </data>
+    
+    <data name="wellbeing_take_notice">
+        <value>Take notice</value>
+    </data>
+    
+    <data name="wellbeing_keep_learning">
+        <value>Keep learning</value>
+    </data>
+    
+    <data name="wellbeing_give">
+        <value>Give</value>
+    </data>
+    
+    <data name="wellbeing_unassigned">
+        <value>None</value>
+    </data>
+    
+    <data name="days_active">
+        <value>Days logged</value>
+    </data>
+    
+    <data name="five_ways_to_wellbeing">
+        <value>Five ways to wellbeing</value>
+    </data>
+    
+    <data name="five_ways_to_wellbeing_description">
+        <value>The five ways to wellbeing provide areas of focus that help you maintain positive mental wellbeing. Think of it as your five a day for your mental wellbeing!</value>
+    </data>
+    <data name="wellbeing_connect_description" xml:space="preserve">
+        <value>Connect is all about building relationships, in person or over video call it all counts, what really matters is that you spend time getting to know each other deeply, build a sense of trust, go deeper than the superficial, and most importantly make time to listen.</value>
+    </data>
+    <data name="wellbeing_be_active_description" xml:space="preserve">
+        <value>Be active is all about getting in some exercise, whether that be grabbing your yoga mat and taking on the downward dog, going for a short walk during your lunch break or training for your next marathon, make sure to keep it at a level you are comfortable with, if you don't feel better, change it up until you find something you love.</value>
+    </data>
+    <data name="wellbeing_take_notice_description" xml:space="preserve">
+        <value>Take notice is all about taking the time to reflect, look at the bigger picture, how was your day today? Make the most of the little things, put that phone down, stop scrolling. Ah, that's better, now you can enjoy the moment.</value>
+    </data>
+    <data name="wellbeing_keep_learning_description" xml:space="preserve">
+        <value>Keep learning is all about taking time to learn what you love. Growing your skills and finding a real sense of achievement in what you love to do. Whether it be a new skill or String Theory, get out there and start learning.</value>
+    </data>
+    <data name="wellbeing_give_description" xml:space="preserve">
+        <value>Giving is all about using what you have to benefit someone else. Whether that be giving a smile or a quick nod of the head to a stranger as you pass by or donning the apron for a charity bake sale, it all counts.</value>
+    </data>
+</root>

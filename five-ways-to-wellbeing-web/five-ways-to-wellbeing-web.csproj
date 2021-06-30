@@ -26,4 +26,20 @@
       <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.2.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Strings-GB.resx">
+        <Generator>PublicResXFileCodeGenerator</Generator>
+        <LastGenOutput>Strings-GB.Designer.cs</LastGenOutput>
+        <CustomToolNamespace>Resources</CustomToolNamespace>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\Strings-GB.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Strings-GB.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>
