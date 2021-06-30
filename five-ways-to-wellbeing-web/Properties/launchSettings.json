@@ -18,10 +18,18 @@
     "five_ways_to_wellbeing_web": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "applicationUrl": "https://{ServiceHost}:5001;http://{ServiceHost}:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "production": {
+      "commandName": "Executable",
+      "launchBrowser": false,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 60090,
+      "useSSL": true,
+      "sslPort": 44337
     }
   }
 }
