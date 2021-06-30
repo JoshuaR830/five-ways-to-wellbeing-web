@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY ["five-ways-to-wellbeing-web/five-ways-to-wellbeing-web.csproj", "five-ways-to-wellbeing-web/"]
-RUN dotnet restore "five-ways-to-wellbeing-web/five-ways-to-wellbeing-web.csproj"
+COPY ["five-ways-to-wellbeing-web.csproj", "."]
+RUN dotnet restore "five-ways-to-wellbeing-web.csproj"
 COPY . .
-WORKDIR "/src/five-ways-to-wellbeing-web"
+WORKDIR "/src"
 RUN dotnet build "five-ways-to-wellbeing-web.csproj" -c Release -o /app/build
 
 FROM build AS publish
