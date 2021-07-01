@@ -7,12 +7,15 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY ["five-ways-to-wellbeing-web.csproj", "."]
-RUN dotnet restore "five-ways-to-wellbeing-web.csproj"
-COPY . .
-WORKDIR "/src"
-RUN dotnet build "five-ways-to-wellbeing-web.csproj" -c Release -o /app/build
 
+# Restore nuget
+COPY *.csproj .
+RUN dotnet restore
+
+# Copy source code
+COPY . .
+
+# Build
 FROM build AS publish
 RUN dotnet publish "five-ways-to-wellbeing-web.csproj" -c Release -o /app/publish
 
