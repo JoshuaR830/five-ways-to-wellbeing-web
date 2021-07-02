@@ -8,6 +8,8 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
 
+ENV ASPNETCORE_URLS http://+:80;https://+:443
+
 # Restore nuget
 COPY *.csproj .
 RUN dotnet restore
@@ -16,10 +18,9 @@ RUN dotnet restore
 COPY . .
 
 # Build
-FROM build AS publish
-RUN dotnet publish "five-ways-to-wellbeing-web.csproj" -c Release -o /app/publish
+RUN dotnet publish -c Release -o /app/publish --no-restore
 
-FROM base AS final
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "five-ways-to-wellbeing-web.dll"]
