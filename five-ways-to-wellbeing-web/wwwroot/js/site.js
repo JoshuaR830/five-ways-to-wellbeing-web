@@ -47,12 +47,12 @@ function animate(graph, wayToWellbeingValues) {
     let giveValues = wayToWellbeingValues[4]/100
     
     while (animationCounter <= animationSpeed) {
-        console.log(animationCounter)
+        // console.log(animationCounter)
 
         callAnimate(graph, connectValues, beActiveValues, keepLearningValues, takeNoticeValues, giveValues, animationCounter)
         
         animationCounter ++;
-        console.log("Hi", animationCounter)
+        // console.log("Hi", animationCounter)
     }
     
     // graph.clearRect(0, 0, graphSize, graphSize);
@@ -67,8 +67,8 @@ function callAnimate(graph, connectValues, beActiveValues, keepLearningValues, t
         calculateArc(graph, 2, (keepLearningValues/animationSpeed) * animationStage, way_to_wellbeing_keep_learning)
         calculateArc(graph, 3, (takeNoticeValues/animationSpeed) * animationStage, way_to_wellbeing_take_notice)
         calculateArc(graph, 4, (giveValues/animationSpeed) * animationStage, way_to_wellbeing_give)
-        console.log("Hi", animationStage)
-        console.log(animationCounter)
+        // console.log("Hi", animationStage)
+        // console.log(animationCounter)
     }, animationCounter * 10)
 }
 
@@ -85,8 +85,8 @@ function calculateArc(graph, arcNumber, radius, fill) {
 
 function drawArc(graph, arcStart, arcEnd, radius, fill) {
     graph.beginPath();
-    console.log(centerX)
-    console.log(centerY)
+    // console.log(centerX)
+    // console.log(centerY)
     graph.moveTo(centerX, centerY);
     graph.arc(centerX, centerY, radius * baseRadius, arcStart * Math.PI, arcEnd * Math.PI)
     graph.fillStyle = fill

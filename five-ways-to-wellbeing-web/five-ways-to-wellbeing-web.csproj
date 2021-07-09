@@ -5,6 +5,14 @@
         <RootNamespace>five_ways_to_wellbeing_web</RootNamespace>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
+    
+    <PropertyGroup>
+        <ServiceWorkerAssetManifest>service-worker-assets.js</ServiceWorkerAssetManifest>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ServiceWorker Include="wwwroot\sw.js" />
+    </ItemGroup>
 
     <ItemGroup>
       <Content Update="Views\Shared\Error.cshtml">
@@ -41,6 +49,10 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>Strings-GB.resx</DependentUpon>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\images" />
     </ItemGroup>
 
 </Project>
