@@ -26,5 +26,5 @@ RUN dotnet publish -c Release -o /app
 FROM base as final
 
 WORKDIR /app
-COPY --from=publish publish/app .
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "five-ways-to-wellbeing-web.dll"]
