@@ -73,4 +73,7 @@
     <data name="wellbeing_give_description" xml:space="preserve">
         <value>Giving is all about using what you have to benefit someone else. Whether that be giving a smile or a quick nod of the head to a stranger as you pass by or donning the apron for a charity bake sale, it all counts.</value>
     </data>
+    <data name="title_progress" xml:space="preserve">
+        <value>Progress</value>
+    </data>
 </root>

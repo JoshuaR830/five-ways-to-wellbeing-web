@@ -97,6 +97,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Progress.
+        /// </summary>
+        public static string title_progress {
+            get {
+                return ResourceManager.GetString("title_progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Be active.
         /// </summary>
         public static string wellbeing_be_active {
