@@ -20,7 +20,7 @@ COPY . .
 # Build
 RUN dotnet build -c Release -o /app
 
-FROM base AS publish
+FROM build AS publish
 RUN dotnet publish -c Release -o /app
 
 FROM base as final
