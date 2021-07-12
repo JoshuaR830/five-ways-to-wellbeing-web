@@ -42,7 +42,7 @@ namespace five_ways_to_wellbeing_web
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
