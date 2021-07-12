@@ -17,9 +17,13 @@ RUN dotnet restore
 COPY . .
 
 # Build
-RUN dotnet publish -c Release -o /app/publish --no-restore
+RUN dotnet build -c Release -o /app
 
-FROM base AS final
+FROM base AS publish
+RUN dotnet publish -c Release -o /app
+
+FROM base as final
+
 WORKDIR /app
-COPY --from=build /app/publish .
+COPY --from=publish publish/app .
 ENTRYPOINT ["dotnet", "five-ways-to-wellbeing-web.dll"]
