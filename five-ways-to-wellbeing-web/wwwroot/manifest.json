@@ -23,9 +23,6 @@
   ],
   "start_url": "/",
   "color": "#ffffff",
-  "background_color": "#ff0000",
-  "color_scheme_overrides": {
-    "background_color": "#00ff00"
-  },
+  "background_color": "#ccc",
   "theme_color": "#00ff00"
 }
