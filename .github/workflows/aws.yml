@@ -51,6 +51,9 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
+      
+    - name : machine echo $GITHUB_EVENT_PATH
+      run : "echo $GITHUB_EVENT_PATH"
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
