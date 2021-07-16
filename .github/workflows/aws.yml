@@ -76,6 +76,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: joshua-richarddson-dev-1
+        service: joshua-richardson-dev-1
         cluster: joshua-richardson-dev
         wait-for-service-stability: true
