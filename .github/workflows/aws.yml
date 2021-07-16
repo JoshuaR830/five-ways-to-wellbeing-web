@@ -51,9 +51,6 @@ jobs:
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
-      
-    - name : machine echo $GITHUB_EVENT_PATH
-      run : "echo $GITHUB_EVENT_PATH"
 
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
@@ -61,10 +58,12 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: five-ways-to-wellbeing-web
         IMAGE_TAG: ${{ github.sha }}
+      working-directory: ./five-ways-to-wellbeing
       run: |
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
+        ls
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
