@@ -8091,6 +8091,9 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+.theme-dark nav .nav-wrapper {
+  padding: 0 0.75rem;
+}
 .theme-dark .color-primary-icon {
   margin: 8px;
 }
