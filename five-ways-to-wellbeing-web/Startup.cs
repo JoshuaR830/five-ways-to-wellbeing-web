@@ -48,7 +48,7 @@ namespace five_ways_to_wellbeing_web
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Progress}/{id?}");
             });
         }
     }

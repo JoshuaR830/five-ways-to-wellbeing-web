@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = @Resources.Strings_GB.title_progress;
+}
+
+<div class="page-width">
+    <div class="row">
+        <div id="page-content" style="display: none">
+            @{
+                await Html.RenderPartialAsync("~/Views/Components/Graph.cshtml");
+                await Html.RenderPartialAsync("~/Views/Components/TodayView.cshtml");
+                
+            }
+        </div>
+        <div id="page-explanation" style="display: none">
+            @{
+                await Html.RenderPartialAsync("~/Views/Home/Index.cshtml");
+            }
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        window.addEventListener("load", function() {
+            let cookies = decodeURIComponent(document.cookie);
+            let splitCookies = cookies.split(';');
+            console.log(splitCookies);
+            splitCookies.forEach(function (currentCookie) {
+                let splitCurrent = currentCookie.split('=');
+                if (splitCurrent[0].trim() === "viewed") {
+                    console.log(splitCurrent[1])
+                    
+                    if (splitCurrent[1] === "true") {
+                        document.getElementById("page-explanation").style.display = "none";
+                        document.getElementById("page-content").style.display = "block";
+                        return;
+                    } else {
+                        showExplanation()
+                        return;
+                    }
+                }
+                
+                showExplanation();
+            })
+        })
+        
+        function showExplanation() {
+            document.getElementById("page-explanation").style.display = "block"
+            document.getElementById("page-content").style.display = "none"
+            document.cookie = "viewed" + "=" + "true" + ";";
+        }
+    </script>
+} 

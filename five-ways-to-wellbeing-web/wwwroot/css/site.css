@@ -8138,6 +8138,9 @@ input[type=range]::-ms-thumb {
   display: flex;
   justify-content: center;
 }
+.theme-dark .page-width .row {
+  width: 100%;
+}
 .theme-dark .card .card-content.with-graph {
   justify-content: center;
   text-align: center;
@@ -8153,6 +8156,10 @@ input[type=range]::-ms-thumb {
 .card.rounded {
   border-radius: 16px;
   overflow: hidden;
+}
+
+.--full-width {
+  width: 100%;
 }
 
 /*# sourceMappingURL=site.css.map */

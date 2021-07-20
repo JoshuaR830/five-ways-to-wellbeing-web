@@ -55,6 +55,20 @@
         <value>Five ways to wellbeing</value>
     </data>
     
+    <data name="title_today">
+        <value>Today</value>
+    </data>
+    
+    <data name="description_today">
+        <value>Here is how your day is looking so far</value>
+    </data>
+    
+    <data name="button_add_activity">
+        <value>Activity</value>
+    </data>
+    
+    
+    
     <data name="five_ways_to_wellbeing_description">
         <value>The five ways to wellbeing provide areas of focus that help you maintain positive mental wellbeing. Think of it as your five a day for your mental wellbeing!</value>
     </data>
