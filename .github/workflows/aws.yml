@@ -24,8 +24,10 @@
 #    and best practices on handling the access key credentials.
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 name: Deploy to Amazon ECS
 
@@ -56,19 +58,27 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: five-ways-to-wellbeing-web
         IMAGE_TAG: ${{ github.sha }}
+#       working-directory: ./five-ways-to-wellbeing-web/five-ways-to-wellbeing-web
       run: |
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
+        pwd
+        cd five-ways-to-wellbeing-web
+        ls
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
+    - name: Download task definition
+      run: |
+        aws ecs describe-task-definition --task-definition joshua-richardson-dev --query taskDefinition > task-definition.json
+        
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: task-definition1.json
+        task-definition: task-definition.json
         container-name: joshua-richardson-dev
         image: ${{ steps.build-image.outputs.image }}
 

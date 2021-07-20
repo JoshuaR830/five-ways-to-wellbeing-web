@@ -28,6 +28,10 @@ $translucent-way-to-wellbeing-none: transparentize(#cccccc, .85);
     .color-primary {
       @extend .black;
     }
+    
+    .nav-wrapper {
+      padding: 0 0.75rem;
+    }
   }
   
   .color-primary-icon {
