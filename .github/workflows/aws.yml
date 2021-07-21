@@ -87,5 +87,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: joshua-richardson-dev
-        cluster: joshua-richardson-dev-cluster
+        cluster: joshua-richardson-dev-t3a-nano
         wait-for-service-stability: true
