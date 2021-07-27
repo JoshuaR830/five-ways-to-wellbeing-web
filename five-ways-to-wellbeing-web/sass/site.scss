@@ -106,6 +106,10 @@ $translucent-way-to-wellbeing-none: transparentize(#cccccc, .85);
   .page-width {
     display: flex;
     justify-content: center;
+    
+    .row {
+      width: 100%;
+    }
   }
 
   .card {
@@ -137,4 +141,8 @@ $translucent-way-to-wellbeing-none: transparentize(#cccccc, .85);
     border-radius: 16px;
     overflow: hidden;
   }
+}
+
+.--full-width {
+  width: 100%;
 }

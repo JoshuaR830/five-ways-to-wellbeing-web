@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Activity.
+        /// </summary>
+        public static string button_add_activity {
+            get {
+                return ResourceManager.GetString("button_add_activity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Connect.
         /// </summary>
         public static string connect {
@@ -75,6 +84,15 @@ namespace Resources {
         public static string days_active {
             get {
                 return ResourceManager.GetString("days_active", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Here is how your day is looking so far.
+        /// </summary>
+        public static string description_today {
+            get {
+                return ResourceManager.GetString("description_today", resourceCulture);
             }
         }
         
@@ -102,6 +120,15 @@ namespace Resources {
         public static string title_progress {
             get {
                 return ResourceManager.GetString("title_progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Today.
+        /// </summary>
+        public static string title_today {
+            get {
+                return ResourceManager.GetString("title_today", resourceCulture);
             }
         }
         

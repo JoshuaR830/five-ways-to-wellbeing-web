@@ -21,7 +21,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "/Home/Progress",
   "color": "#ffffff",
   "background_color": "#778898",
   "theme_color": "#658099"

@@ -27,6 +27,11 @@ namespace five_ways_to_wellbeing_web.Controllers
         {
             return View();
         }
+        
+        public IActionResult Progress()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
